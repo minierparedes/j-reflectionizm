@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   },
   // css: ['@/assets/scss/style.scss'],
   telemetry: false,
-  modules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxt/image'],
+  modules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxt/image', '@nuxtjs/tailwindcss'],
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
@@ -45,8 +45,6 @@ export default defineNuxtConfig({
     quality: 80,
   },
   postcss: {
-    plugins: {
-      autoprefixer: {},
-    },
+    plugins: { tailwindcss: {}, autoprefixer: {} },
   },
 })

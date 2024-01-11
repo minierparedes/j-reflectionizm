@@ -4,13 +4,9 @@
   "editor.formatOnType": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
   },
   "css.validate": false,
-  "scss.validate": false,
-  "emmet.includeLanguages": {
-    "vue": "html"
-  },
-  "nuxt.isNuxtApp": false
+  "scss.validate": false
 }
