@@ -8,5 +8,12 @@
     "source.fixAll.stylelint": "explicit"
   },
   "css.validate": false,
-  "scss.validate": false
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss"],
+  "stylelint.enable": true,
+  "stylelint.config": null,
+  "stylelint.reportNeedlessDisables": true,
+  "[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  }
 }
