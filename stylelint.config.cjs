@@ -18,6 +18,8 @@ module.exports = {
         ignoreProperties: ['overflow-scrolling'],
       },
     ],
+    'color-no-invalid-hex': true,
+    'block-no-empty': true,
     'at-rule-disallowed-list': ['extend'],
     'at-rule-empty-line-before': 'never',
     'no-descending-specificity': null,
