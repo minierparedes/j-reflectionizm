@@ -1,8 +1,20 @@
 import { useSeoMeta } from '#imports';
 <template>
-  <div class="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">
-    <h1>Index page</h1>
-  </div>
+  <main>
+    <section>
+      <h1>Index page</h1>
+      <div class="container">
+        <h1 class="hero-section">Hero section</h1>
+        <TheHeroSection />
+      </div>
+    </section>
+    <section><TheAboutSection /></section>
+    <section><TheCarouselSection /></section>
+    <section><TheSchedulingSection /></section>
+    <section><TheServicesSection /></section>
+    <section><TheFormSection /></section>
+    <section><TheAccessSection /></section>
+  </main>
 </template>
 
 <script lang="ts" setup>
