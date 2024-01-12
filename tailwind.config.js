@@ -11,7 +11,7 @@ export default {
   theme: {
     fontFamily: {
       notoJP: ['Noto Serif JP'],
-      ptSerif: ['serif', 'PT Serif'],
+      ibmPlex: ['IBM Plex Serif'],
     },
     extend: {},
   },
