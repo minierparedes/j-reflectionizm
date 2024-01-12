@@ -9,6 +9,10 @@ export default {
     './error.vue',
   ],
   theme: {
+    fontFamily: {
+      notoJP: ['Noto Serif JP'],
+      ptSerif: ['serif', 'PT Serif'],
+    },
     extend: {},
   },
   plugins: [],
