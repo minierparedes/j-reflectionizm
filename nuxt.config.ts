@@ -31,7 +31,7 @@ export default defineNuxtConfig({
       failOnError: false,
     },
   },
-  // css: ['@/assets/scss/style.scss'],
+  css: ['@/assets/scss/style.scss'],
   telemetry: false,
   modules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxt/image', '@nuxtjs/tailwindcss'],
   devtools: { enabled: true },
