@@ -24,3 +24,51 @@
   align-items: center;
   display: flex;
 }
+
+.l-page-hero-columns {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 1rem;
+}
+
+.c-page-hero-pill-list {
+  grid-template-columns: 1;
+  display: grid;
+  text-align: center;
+}
+
+.c-page-hero-pill-1,
+.c-page-hero-pill-2,
+.c-page-hero-pill-3 {
+  margin-bottom: 10px;
+}
+
+// .c-page-hero-pill-list {
+//   flex-direction: column;
+//   display: flex;
+// }
+
+// .l-page-hero-columns {
+//   justify-content: space-between;
+//   display: flex;
+// }
+
+// .c-page-hero-pill-list,
+// .c-page-hero-badge {
+//   flex: 1;
+// }
+
+.c-page-hero-badge img {
+  width: 140px;
+  height: auto;
+}
+
+// .c-page-hero-badge img {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+// .mx-8 {
+//     margin-left: 2rem/* 32px */;
+//     margin-right: 2rem/* 32px */;
+// }

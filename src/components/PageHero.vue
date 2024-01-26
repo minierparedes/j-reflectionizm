@@ -4,14 +4,20 @@
       <div class="c-page-hero-image"><img src="../assets/images/page_hero.png" alt="hero background" /></div>
       <div class="l-page-hero-container">
         <div class="c-page-hero-headline text-black">
-          <h4 class="t-page-hero-headline-1 text-4xl">歴史と自然の都「所沢」の公園墓地</h4>
-          <h4 class="t-page-hero-headline-2 text-3xl">＜宗教自由＞</h4>
+          <h4 class="t-page-hero-headline-1 mb-4 text-4xl">歴史と自然の都「所沢」の公園墓地</h4>
           <div class="t-page-hero-headline-main">
             <h3 class="t-page-hero-headline-3 text-6xl">霊源寺墓苑</h3>
             <h1 class="t-page-hero-headline-4 text-8xl">陽向の里</h1>
           </div>
         </div>
-        <div class="l-page-hero-columns"></div>
+        <div class="l-page-hero-columns">
+          <div class="c-page-hero-pill-list">
+            <h3 class="c-page-hero-pill-1 rounded-full bg-white text-red-500">所沢駅からバスで10分</h3>
+            <h3 class="c-page-hero-pill-2 rounded-full bg-blue-500">後継ぎ心配不要・全区画永代供養付き</h3>
+            <h3 class="c-page-hero-pill-3 rounded-full bg-blue-500">30万円～用途別のお墓を用意</h3>
+          </div>
+          <div class="c-page-hero-badge"><img src="../assets/images/gold_badge.png" alt="" /></div>
+        </div>
       </div>
     </div>
   </div>
