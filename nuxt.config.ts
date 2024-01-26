@@ -31,7 +31,12 @@ export default defineNuxtConfig({
       failOnError: false,
     },
   },
-  css: ['@/assets/scss/style.scss', '@/assets/scss/base.scss', '@/assets/scss/sections/header.scss'],
+  css: [
+    '@/assets/scss/style.scss',
+    '@/assets/scss/base.scss',
+    '@/assets/scss/sections/header.scss',
+    '@/assets/scss/sections/page-hero.scss',
+  ],
   telemetry: false,
   modules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxt/image', '@nuxtjs/tailwindcss', 'nuxt-icon'],
   devtools: { enabled: true },

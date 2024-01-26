@@ -1,0 +1,26 @@
+.l-page-hero-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.c-page-hero-image {
+  position: relative;
+}
+.c-page-hero-headline {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.t-page-hero-headline-main {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
