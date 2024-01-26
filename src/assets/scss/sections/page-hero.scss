@@ -43,7 +43,32 @@
   margin-bottom: 10px;
 }
 
+.c-page-hero-badge {
+  position: relative;
+  text-align: center;
+}
+
+.c-page-hero-badge p {
+  position: absolute;
+  top: 0;
+  left: 5%; // move position to left with neg %
+  margin: 0.5rem 0 0;
+  transform: translateX(-175%);
+  transform: translateY(45%);
+}
+
 .c-page-hero-badge img {
   width: 140px;
   height: auto;
+}
+
+.c-page-hero-button-content {
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 35rem;
+  margin-top: 10rem;
+  padding: 1rem;
+  border-radius: 35px;
 }

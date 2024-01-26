@@ -1,3 +1,6 @@
+<script setup>
+  import { Icon } from '@iconify/vue'
+</script>
 <template>
   <div class="l-container">
     <div class="c-page-hero">
@@ -16,7 +19,17 @@
             <h3 class="c-page-hero-pill-2 rounded-full bg-blue-500">後継ぎ心配不要・全区画永代供養付き</h3>
             <h3 class="c-page-hero-pill-3 rounded-full bg-blue-500">30万円～用途別のお墓を用意</h3>
           </div>
-          <div class="c-page-hero-badge"><img src="../assets/images/gold_badge.png" alt="" /></div>
+          <div class="c-page-hero-badge">
+            <img src="../assets/images/gold_badge.png" alt="gold badge" />
+            <p class="t-page-hero-badge-text text-l font-bold text-red-600">
+              一般墓<br />
+              好評発売中
+            </p>
+          </div>
+        </div>
+        <div class="c-page-hero-button-content bg-gradient-to-b from-orange-700 to-orange-500">
+          <button class="c-page-hero-button text-xl text-white">無料で詳細資料を見る</button>
+          <span><Icon icon="icon-park-solid:play" class="t-page-hero-button-icon size-5 text-white" /></span>
         </div>
       </div>
     </div>
