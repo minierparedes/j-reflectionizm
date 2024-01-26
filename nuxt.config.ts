@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   },
   css: ['@/assets/scss/style.scss', '@/assets/scss/base.scss', '@/assets/scss/sections/header.scss'],
   telemetry: false,
-  modules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxt/image', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxt/image', '@nuxtjs/tailwindcss', 'nuxt-icon'],
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
