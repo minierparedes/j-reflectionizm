@@ -1,0 +1,37 @@
+.c-about-us-heading {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 15vh;
+}
+
+.c-about-us-location-heading {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.c-about-us-location-content {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  display: flex;
+}
+
+.c-about-us-location-title {
+  flex: 1 0 100%;
+  margin-right: 20px;
+}
+
+.c-about-us-location-content p {
+  flex: 1;
+  max-width: 764px;
+  margin-right: 20px;
+}
+
+.c-about-us-location-content img {
+  max-width: 100%;
+}

@@ -36,6 +36,7 @@ export default defineNuxtConfig({
     '@/assets/scss/base.scss',
     '@/assets/scss/sections/header.scss',
     '@/assets/scss/sections/page-hero.scss',
+    '@/assets/scss/sections/about-us.scss',
   ],
   telemetry: false,
   modules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxt/image', '@nuxtjs/tailwindcss', 'nuxt-icon'],
