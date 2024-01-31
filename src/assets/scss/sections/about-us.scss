@@ -56,6 +56,15 @@
   background-color: #449732;
 }
 
+.l-about-us-transport-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin-inline: auto;
+  border: 2px solid #449732;
+  background-color: beige;
+}
+
 .c-about-us-transportation-content {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
@@ -63,13 +72,6 @@
   gap: 20px;
   max-width: 100%;
   padding: 50px;
-}
-
-.l-about-us-transport-container {
-  width: 100%;
-  height: 100%;
-  margin-inline: auto;
-  background-color: beige;
 }
 
 .c-about-us-card-container {
