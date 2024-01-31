@@ -11,7 +11,7 @@
         立地良好
       </h2>
       <div class="c-about-us-location-content">
-        <h3 class="c-about-us-location-title text-orange-400">所沢駅からバスで10分</h3>
+        <h3 class="c-about-us-location-title text-xl font-semibold text-orange-400">所沢駅からバスで10分</h3>
         <p>
           霊源寺墓苑「陽向の里」は、ターミナル駅である所沢駅からバスでアクセスが可能。10分に1本はバスが走るため、交通の便が良く、市内随一の好立地公園墓地です。埼玉県所沢市上安松に位置する住宅地から近い霊園であり、都市部からも近いのが特徴です。
         </p>
@@ -20,6 +20,15 @@
         </div>
       </div>
     </div>
-    <div class="c-about-us-transportation"></div>
+    <div class="c-about-us-transportation">
+      <div class="c-about-us-transportion-tab">
+        <h1 class="t-about-us-transport-tab-heading text-3xl text-white">交通のご案内</h1>
+      </div>
+      <div class="c-about-us-transportation-content">
+        <AboutUsCard />
+        <AboutUsCard />
+        <AboutUsCard />
+      </div>
+    </div>
   </div>
 </template>

@@ -29,9 +29,33 @@
 .c-about-us-location-content p {
   flex: 1;
   max-width: 764px;
-  margin-right: 20px;
+  margin-right: 125px;
 }
 
 .c-about-us-location-content img {
   max-width: 100%;
+}
+
+.c-about-us-transportation {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 15vh;
+}
+
+.c-about-us-transportion-tab {
+  padding: 10px 20px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #449732;
+}
+
+.c-about-us-transportation-content {
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
 }
