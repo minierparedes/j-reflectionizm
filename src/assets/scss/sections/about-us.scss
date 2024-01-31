@@ -1,3 +1,6 @@
+.l-about-us-container {
+  height: 150vh;
+}
 .c-about-us-heading {
   flex-direction: column;
   justify-content: center;
@@ -38,10 +41,11 @@
 
 .c-about-us-transportation {
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   display: flex;
-  height: 15vh;
+  height: 45%;
+  margin-top: 120px;
 }
 
 .c-about-us-transportion-tab {
@@ -57,5 +61,23 @@
   justify-content: center;
   display: grid;
   gap: 20px;
-  padding: 20px;
+  max-width: 100%;
+  padding: 50px;
+}
+
+.l-about-us-transport-container {
+  width: 100%;
+  height: 100%;
+  margin-inline: auto;
+  background-color: beige;
+}
+
+.c-about-us-card-container {
+  width: 100%;
+}
+
+.c-about-us-card-container p {
+  width: 80%;
+  margin-top: 25px;
+  text-align: center;
 }

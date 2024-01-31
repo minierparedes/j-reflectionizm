@@ -3,6 +3,7 @@
     <section>
       <TheHeader />
     </section>
+    <!-- TODO: remove /set to page/index.vue -->
     <section>
       <PageHero />
     </section>
