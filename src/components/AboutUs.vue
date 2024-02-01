@@ -30,28 +30,46 @@
             <div class="c-about-us-card-container">
               <AboutUsCard />
               <p>
-                西武バス <br />「所沢駅東口行」に乗車 <br />約
-                <span class="t-about-us-card-time text-xl font-extrabold text-red-600">15</span> 分
+                西武バス <br />「所沢駅東口行」に乗車 <br />約<span
+                  class="t-about-us-card-time text-xl font-extrabold text-red-600"
+                  >15</span
+                >分
               </p>
             </div>
             <div class="c-about-us-card-container">
               <AboutUsCard />
               <p>
-                西武バス <br />「所沢駅東口行」に乗車 <br />約
-                <span class="t-about-us-card-time text-xl font-extrabold text-red-600">15</span> 分
+                西武バス <br />「所沢駅東口行」に乗車 <br />約<span
+                  class="t-about-us-card-time text-xl font-extrabold text-red-600"
+                  >15</span
+                >分
               </p>
             </div>
             <div class="c-about-us-card-container">
               <AboutUsCard />
               <p>
-                西武バス <br />「所沢駅東口行」に乗車 <br />約
-                <span class="t-about-us-card-time text-xl font-extrabold text-red-600">15</span> 分
+                西武バス <br />「所沢駅東口行」に乗車 <br />約<span
+                  class="t-about-us-card-time text-xl font-extrabold text-red-600"
+                  >15</span
+                >分
               </p>
             </div>
           </div>
-          <p>バス停「上安松」下車</p>
-          <p>霊源寺墓苑 陽向の里</p>
-          <p>●西武池袋線「秋津駅」よりタクシーで約8分</p>
+          <div class="c-about-us-transport-orange-pill bg-orange-600 text-3xl font-extrabold text-white">
+            <p>バス停「上安松」下車</p>
+          </div>
+          <p class="t-about-us-transport-pill-text text-xl">
+            徒歩 約<span class="t-about-us-transport-pill-number text-2xl text-red-700">1</span>分
+          </p>
+          <div class="c-about-us-transport-red-pill bg-red-600 text-3xl font-extrabold text-white">
+            <p>霊源寺墓苑 陽向の里</p>
+          </div>
+
+          <p class="t-about-us-transport-pill-text3 text-2xl">
+            ●西武池袋線「秋津駅」よりタクシーで約<span class="t-about-us-transport-pill-number text-2xl text-red-700"
+              >8</span
+            >分
+          </p>
         </div>
       </div>
     </div>
