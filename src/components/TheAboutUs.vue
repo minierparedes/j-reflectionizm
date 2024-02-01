@@ -101,6 +101,8 @@
     flex-wrap: wrap;
     align-items: flex-start;
     display: flex;
+    max-width: 1349px;
+    margin-inline: auto;
   }
 
   .about-us-location-title {
@@ -110,12 +112,26 @@
 
   .about-us-location-content p {
     flex: 1;
-    max-width: 764px;
-    margin-right: 125px;
+    max-width: 100%;
+    margin-right: 25px;
   }
 
   .about-us-location-content img {
     max-width: 100%;
+    margin-top: 20px;
+  }
+  @media (max-width: 764px) {
+    .about-us-location-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .about-us-location-title,
+    .about-us-location-content p,
+    .about-us-location-image {
+      width: 100%;
+      margin-right: 0;
+      text-align: center;
+    }
   }
 
   .about-us-transportation {
