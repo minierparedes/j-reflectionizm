@@ -75,3 +75,110 @@
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+  .l-about-us-container {
+    height: 150vh;
+  }
+  .c-about-us-heading {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 15vh;
+  }
+
+  .c-about-us-location-heading {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .c-about-us-location-content {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .c-about-us-location-title {
+    flex: 1 0 100%;
+    margin-right: 20px;
+  }
+
+  .c-about-us-location-content p {
+    flex: 1;
+    max-width: 764px;
+    margin-right: 125px;
+  }
+
+  .c-about-us-location-content img {
+    max-width: 100%;
+  }
+
+  .c-about-us-transportation {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    margin-top: 120px;
+  }
+
+  .c-about-us-transportion-tab {
+    padding: 10px 20px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #449732;
+  }
+
+  .l-about-us-transport-container {
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-inline: auto;
+    border: 2px solid #449732;
+    background-color: beige;
+  }
+
+  .c-about-us-transportation-content {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    display: grid;
+    gap: 20px;
+    width: 90%; // TODO: content not dead center
+    padding: 50px;
+  }
+
+  .c-about-us-card-container {
+    width: 100%;
+  }
+
+  .c-about-us-card-container p {
+    width: 80%;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .c-about-us-transport-orange-pill,
+  .c-about-us-transport-red-pill {
+    width: 76%; // TODO: re-adjust based on: c-about-us-transportation-content
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+  }
+
+  .t-about-us-transport-pill-text3 {
+    margin-bottom: 50px;
+  }
+</style>

@@ -33,3 +33,80 @@
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+  .l-page-hero-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+  }
+
+  .c-page-hero-image {
+    position: relative;
+  }
+  .c-page-hero-headline {
+    margin-top: 10rem;
+    text-align: center;
+  }
+
+  .t-page-hero-headline-main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .l-page-hero-columns {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 1rem;
+  }
+
+  .c-page-hero-pill-list {
+    grid-template-columns: 1;
+    display: grid;
+    text-align: center;
+  }
+
+  .c-page-hero-pill-1,
+  .c-page-hero-pill-2,
+  .c-page-hero-pill-3 {
+    margin-bottom: 10px;
+  }
+
+  .c-page-hero-badge {
+    position: relative;
+    text-align: center;
+  }
+
+  .c-page-hero-badge p {
+    position: absolute;
+    top: 0;
+    left: 5%; // move position to left with neg %
+    margin: 0.5rem 0 0;
+    transform: translateX(-175%);
+    transform: translateY(45%);
+  }
+
+  .c-page-hero-badge img {
+    width: 140px;
+    height: auto;
+  }
+
+  .c-page-hero-button-content {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 35rem;
+    margin-top: 10rem;
+    padding: 1rem;
+    border-radius: 35px;
+  }
+</style>

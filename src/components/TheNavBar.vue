@@ -20,3 +20,49 @@
     <div class="c-header-mobile-menu-list"></div>
   </nav>
 </template>
+
+<style lang="scss" scoped>
+  .l-header-nav {
+    overflow: hidden;
+    display: flex;
+  }
+
+  .c-header-logo {
+    position: relative;
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    //   background-color: red;
+  }
+
+  .c-header-logo-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    // logo svg goes here
+  }
+
+  .c-header-logo h2 {
+    padding-left: 30px;
+  }
+
+  .c-header-nav-menu-list {
+    flex: 1.2;
+    justify-content: flex-start;
+    gap: 64px;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .c-header-nav-phone-items {
+    align-items: center;
+    display: flex;
+  }
+
+  .c-header-nav-phone-number {
+    margin-left: 0.5rem;
+  }
+</style>
