@@ -1,6 +1,11 @@
 import { useSeoMeta } from '#imports';
 <template>
-  <main></main>
+  <main>
+    <div>
+      <ThePageHero />
+      <TheAboutUs />
+    </div>
+  </main>
 </template>
 
 <script lang="ts" setup>
