@@ -1,8 +1,8 @@
 <template>
   <div class="about-us-transport-card">
-    <h3 class="about-us-transpot-card-content1 text-green-700">西武池袋線</h3>
-    <h2 class="about-us-transpot-card-content2 text-2xl text-white">清瀬駅</h2>
-    <h3 class="about-us-transpot-card-content3 text-green-700">北口3番乗り場</h3>
+    <h3 class="about-us-transpot-card-content1">西武池袋線</h3>
+    <h2 class="about-us-transpot-card-content2">清瀬駅</h2>
+    <h3 class="about-us-transpot-card-content3">北口3番乗り場</h3>
   </div>
 </template>
 
@@ -20,16 +20,24 @@
   }
 
   .about-us-transpot-card-content1,
-  .about-us-transpot-card-content2,
   .about-us-transpot-card-content3 {
+    --tw-text-opacity: 1;
+
     margin: 5px;
+    color: rgb(21 128 61 / var(--tw-text-opacity));
     line-height: 25px;
   }
+
   .about-us-transpot-card-content2 {
-    margin: 0 -20px;
-    padding: 5px;
+    margin: 5px 0;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 25px;
+    line-height: 2rem;
     background-color: #449732;
   }
+
   .about-us-transpot-card-content3 {
     padding: 0 20px;
     border-radius: 30px;
