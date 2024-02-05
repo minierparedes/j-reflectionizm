@@ -96,13 +96,6 @@
     background: url('../assets/images/about_us_location_bg_pattern_image.png');
   }
 
-  .location-content {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    display: flex;
-    max-width: 1349px;
-    margin-inline: auto;
-  }
   .location-title {
     --tw-text-opacity: 1;
 
@@ -112,30 +105,6 @@
     font-weight: 600;
     color: rgb(251 146 60 / var(--tw-text-opacity));
     line-height: 1.75rem /* 28px */;
-  }
-
-  .location-content p {
-    flex: 1;
-    max-width: 100%;
-    margin-right: 25px;
-  }
-
-  .location-content img {
-    max-width: 100%;
-    margin-top: 20px;
-  }
-  @media (max-width: 764px) {
-    .location-content {
-      flex-direction: column;
-      align-items: center;
-    }
-    .location-title,
-    .location-content p,
-    .location-image {
-      width: 100%;
-      margin-right: 0;
-      text-align: center;
-    }
   }
 
   .transportation {
