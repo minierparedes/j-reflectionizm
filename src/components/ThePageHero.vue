@@ -36,7 +36,7 @@
 
 <style lang="scss" scoped>
   .container {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     left: 0;
@@ -44,14 +44,13 @@
     justify-content: flex-start;
     align-items: center;
     display: flex;
-    height: 100vh;
   }
 
   .hero-image {
     position: relative;
   }
   .headline {
-    margin-top: 10rem;
+    margin-top: -45rem;
     color: black;
     text-align: center;
   }
