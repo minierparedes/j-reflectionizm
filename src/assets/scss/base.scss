@@ -109,3 +109,14 @@ textarea:not([rows]) {
     scroll-behavior: auto !important;
   }
 }
+.title {
+  flex: 1 0 100%;
+  order: 1;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: x-large;
+  color: orange;
+  background: url(../assets/images/bg_brush_stroke.png);
+  background-size: cover;
+}

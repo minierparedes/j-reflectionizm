@@ -18,6 +18,7 @@
     <main>
       <ThePageHero />
       <TheAboutUs />
+      <TheThirdSection />
     </main>
   </div>
 </template>
