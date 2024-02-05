@@ -2,7 +2,7 @@
   import { Icon } from '@iconify/vue'
 </script>
 <template>
-  <nav class="nav">
+  <nav class="mobile-nav">
     <div class="logo">
       <img src="../assets/images/header_logo.png" alt="header logo" />
     </div>
@@ -18,29 +18,22 @@
 </template>
 
 <style lang="scss" scoped>
-  .nav {
+  .mobile-nav {
     overflow: hidden;
+    flex-direction: column;
+    align-items: center;
     display: flex;
+    padding: 20px;
   }
 
   .logo {
     position: relative;
-    flex: 1;
-    display: flex;
     padding: 20px;
-  }
-
-  .logo h2 {
-    padding-left: 30px;
   }
 
   .menu-list {
-    flex: 1.2;
-    justify-content: flex-start;
-    gap: 64px;
-    align-items: center;
-    display: flex;
-    padding: 20px;
+    width: 100%;
+    padding: 0;
     list-style: none;
     cursor: pointer;
   }
@@ -48,7 +41,6 @@
   .phone-items {
     align-items: center;
     display: flex;
-
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
