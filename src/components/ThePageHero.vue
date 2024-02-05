@@ -149,12 +149,7 @@
     padding: 1rem;
     border-radius: 35px;
 
-    --tw-gradient-from: #c2410c var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(194 65 12 / 0) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-    --tw-gradient-to-: #f97316 var(--tw-gradient-to-position); // TODO: needs to be fixed
-
-    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+    background-image: linear-gradient(to bottom, #c2410c, #f97316);
   }
 
   .button {
