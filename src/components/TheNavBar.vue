@@ -21,6 +21,7 @@
   .nav {
     overflow: hidden;
     display: flex;
+    background-color: white;
   }
 
   .logo {
