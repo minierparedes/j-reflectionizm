@@ -23,7 +23,7 @@
           <div class="badge">
             <img src="../assets/images/gold_badge.png" alt="gold badge" />
             <p class="badge-text">
-              一般墓<br />
+              <span>一般墓</span><br />
               好評発売中
             </p>
           </div>
@@ -89,36 +89,48 @@
   }
 
   .badge {
+    position: relative;
+    margin-top: -20px;
+    margin-left: 70px;
     text-align: center;
   }
   .badge p {
-    top: 0;
-    left: 5%; // move position to left with neg %
-    margin: 0.5rem 0 0;
-    font-size: 1.25rem /* 20px */;
-    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: 500;
     color: #dc2626;
-    line-height: 1.75rem /* 28px */;
+    line-height: 1.75rem;
+    transform: translate(-40px, -135px);
+  }
+  .badge span {
+    font-size: 40px;
+    font-weight: 700;
   }
   .badge img {
-    width: 140px;
+    width: 220px;
     height: auto;
   }
-
   .pill-list {
-    padding: 10px;
+    margin-right: -50px;
+    margin-left: -50px;
+    padding: 8px;
     text-align: center;
   }
 
   .pill-1 {
-    font-size: 24px;
+    font-size: 25px;
+    font-weight: 800;
     color: #ef4444;
     background-color: white;
   }
 
   .pill-2,
   .pill-3 {
-    font-size: 20px;
+    font-size: 18px;
+    color: white;
     background-color: #3b82f6;
   }
 
@@ -126,10 +138,11 @@
   .pill-2,
   .pill-3 {
     display: inline-block;
+    width: 100%;
     margin-bottom: 10px;
+    padding: 12px;
     border-radius: 50px;
   }
-
   .button-content {
     box-sizing: border-box;
     justify-content: center;
