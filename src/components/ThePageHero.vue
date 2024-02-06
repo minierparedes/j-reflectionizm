@@ -131,7 +131,7 @@
   .pill-3 {
     font-size: 18px;
     color: white;
-    background-color: #3b82f6;
+    background-color: rgba(25, 93, 185, 0.7);
   }
 
   .pill-1,
@@ -148,23 +148,44 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 35rem;
-    margin-top: 10rem;
-    padding: 1rem;
+    width: 65rem;
+    margin-top: 9rem;
+    padding: 1.5rem;
     text-align: center;
-    border-radius: 35px;
+    border-radius: 55px;
 
-    background-image: linear-gradient(to bottom, #c2410c, #f97316);
+    // background-image: linear-gradient(to bottom, #c2410c, #f97316);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1) 0%,
+      #bd0d01 6%,
+      #bd0d01 8%,
+      #bd0d01 10%,
+      #ae4c24 12%,
+      #c85e34 14%,
+      #c85e34 16%,
+      #c2410c 20%,
+      #c2410c 20%,
+      #f97316 70%,
+      #f97316 80%,
+      rgba(225, 95, 9, 0.8) 90%,
+      rgba(225, 95, 9, 0.7) 90%,
+      rgba(225, 95, 9, 0.5) 90%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
   }
 
   .button {
-    font-size: 1.25rem /* 20px */;
+    font-size: 2.3rem;
+    font-weight: 600;
     color: white;
-    line-height: 1.75rem /* 28px */;
+    line-height: 1.75rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   .button-icon {
-    width: 1.25rem /* 20px */;
-    height: 1.25rem /* 20px */;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 5px;
     color: white;
   }
 </style>
