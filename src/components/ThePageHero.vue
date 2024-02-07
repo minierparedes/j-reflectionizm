@@ -74,7 +74,69 @@
   .headline-2 {
     font-size: 140px;
   }
+  @media screen and (max-width: 1280px) {
+    .headline h4 {
+      font-size: 46px;
+    }
 
+    .headline-main {
+      flex-direction: row;
+      align-items: center;
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .headline-1 {
+      font-size: 80px;
+    }
+    .headline-2 {
+      font-size: 120px;
+    }
+  }
+  @media screen and (max-width: 980px) {
+    .headline h4 {
+      font-size: 38px;
+    }
+    .headline-1 {
+      font-size: 55px;
+    }
+    .headline-2 {
+      font-size: 90px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .headline h4 {
+      font-size: 35px;
+    }
+
+    .headline-main {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .headline-1 {
+      font-size: 84px;
+    }
+    .headline-2 {
+      font-size: 140px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .columns {
+      margin-top: 38px;
+    }
+    .headline h4 {
+      font-size: 24px;
+    }
+    .headline-1 {
+      font-size: 46px;
+    }
+    .headline-2 {
+      font-size: 76px;
+    }
+  }
   .columns {
     justify-content: space-between;
     display: flex;
@@ -107,7 +169,7 @@
   }
   @media screen and (max-width: 768px) {
     .badge p {
-      transform: translate(2px, -135px);
+      transform: translate(-15px, -135px);
     }
   }
   .badge span {
@@ -117,6 +179,29 @@
   .badge img {
     width: 220px;
     height: auto;
+  }
+  @media screen and (max-width: 480px) {
+    .badge {
+      position: relative;
+      margin-top: 31px;
+      margin-left: 70px;
+      text-align: center;
+    }
+    .badge p {
+      top: 50%;
+      left: 50%;
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      font-weight: 500;
+      color: #dc2626;
+      line-height: 1.23rem;
+      transform: translate(3px, -73px);
+    }
+    .badge span {
+      font-size: 20px;
+      font-weight: 700;
+    }
   }
   .pill-list {
     margin-right: -50px;
@@ -157,11 +242,54 @@
     }
   }
   @media screen and (max-width: 768px) {
+    .pill-1 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ef4444;
+      background-color: white;
+    }
+
+    .pill-2,
+    .pill-3 {
+      font-size: 14px;
+      color: white;
+      background-color: rgba(25, 93, 185, 0.7);
+    }
     .pill-list {
       margin-right: -100px;
       margin-left: -22px;
       padding: 20px;
       text-align: center;
+    }
+    .pill-1,
+    .pill-2,
+    .pill-3 {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: -1.5rem;
+      border-radius: 50px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .pill-list {
+      margin-right: -66px;
+      margin-left: -16px;
+      padding: -7px;
+      text-align: center;
+    }
+    .pill-1 {
+      font-size: 13px;
+      font-weight: 800;
+      color: #ef4444;
+      background-color: white;
+    }
+
+    .pill-2,
+    .pill-3 {
+      font-size: 14px;
+      color: white;
+      background-color: rgba(25, 93, 185, 0.7);
     }
     .pill-1,
     .pill-2,
@@ -220,6 +348,11 @@
     .button {
       padding: 0.8vw 1.5vw;
       font-size: 4.5vw;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .button-content {
+      margin-top: 18vh;
     }
   }
   .button:hover {

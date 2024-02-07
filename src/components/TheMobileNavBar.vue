@@ -53,4 +53,20 @@
     font-size: 3rem;
     line-height: 1;
   }
+  @media screen and (max-width: 450px) {
+    .phone-items {
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+    }
+
+    .phone-number {
+      margin-left: 0.5rem;
+    }
+
+    .t-phone-icon {
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+  }
 </style>
