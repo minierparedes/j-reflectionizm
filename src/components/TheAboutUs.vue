@@ -68,20 +68,16 @@
   }
 
   .heading-title1 {
-    --tw-text-opacity: 1;
-
-    font-size: 2.25rem /* 36px */;
+    font-size: 64px;
     font-weight: 600;
-    color: rgb(68 151 50 / var(--tw-text-opacity));
-    line-height: 2.5rem /* 40px */;
+    color: #449732;
+    line-height: 1.5;
   }
 
   .heading-title2 {
-    --tw-text-opacity: 1;
-
-    font-size: 3.75rem /* 60px */;
+    font-size: 84px;
     font-weight: 600;
-    color: rgb(68 151 50 / var(--tw-text-opacity));
+    color: #449732;
     line-height: 1;
   }
   .location-heading {
@@ -90,10 +86,28 @@
     display: flex;
     padding-top: 25px;
     padding-bottom: 25px;
-    font-size: 2.25rem /* 36px */;
+    font-size: 36px;
     color: white;
-    line-height: 2.5rem /* 40px */;
+    line-height: 40px;
     background: url('../assets/images/about_us_location_bg_pattern_image.png');
+  }
+  @media screen and (max-width: 1024px) {
+    .heading-title1 {
+      font-size: 60px;
+    }
+    .heading-title2 {
+      font-size: 80px;
+      line-height: 1;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .heading-title1 {
+      font-size: 40px;
+    }
+    .heading-title2 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
   }
 
   .location-title {
@@ -149,8 +163,15 @@
     justify-content: center;
     display: grid;
     gap: 20px;
-    width: 90%; // TODO: content not dead center
-    padding: 50px;
+    width: 80%; // TODO: content not dead center
+    padding: 59px;
+  }
+  @media screen and (max-width: 390px) {
+    .transportation-content {
+      gap: 71px;
+      width: 58%;
+      padding: 33px;
+    }
   }
 
   .card-container {

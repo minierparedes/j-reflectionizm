@@ -17,8 +17,8 @@
     </header>
     <main>
       <ThePageHero />
-      <!-- <TheAboutUs />
-      <TheThirdSection /> -->
+      <TheAboutUs />
+      <TheThirdSection />
     </main>
   </div>
 </template>
