@@ -79,13 +79,13 @@
     justify-content: space-between;
     display: flex;
     width: 100%;
-    max-width: 800px; // Adjust the maximum width as needed
+    max-width: 800px;
     margin-top: 20px;
   }
 
   .left-column,
   .right-column {
-    width: 48%; // Adjust the width of the columns
+    width: 48%;
   }
 
   .badge {
@@ -104,6 +104,11 @@
     color: #dc2626;
     line-height: 1.75rem;
     transform: translate(-40px, -135px);
+  }
+  @media screen and (max-width: 768px) {
+    .badge p {
+      transform: translate(2px, -135px);
+    }
   }
   .badge span {
     font-size: 40px;
@@ -140,21 +145,45 @@
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
-    padding: 12px;
+    padding: 1vw 2vw;
     border-radius: 50px;
+  }
+  @media screen and (max-width: 1200px) {
+    .pill-list {
+      margin-right: -90px;
+      margin-left: -3px;
+      padding: 8px;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .pill-list {
+      margin-right: -100px;
+      margin-left: -22px;
+      padding: 20px;
+      text-align: center;
+    }
+    .pill-1,
+    .pill-2,
+    .pill-3 {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: -1.5rem;
+      border-radius: 50px;
+    }
   }
   .button-content {
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 65rem;
-    margin-top: 9rem;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 5vh;
     padding: 1.5rem;
     text-align: center;
     border-radius: 55px;
-
-    // background-image: linear-gradient(to bottom, #c2410c, #f97316);
     background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.1) 0%,
@@ -176,16 +205,29 @@
   }
 
   .button {
-    font-size: 2.3rem;
+    padding: 0.6rem;
+    font-size: 40px;
     font-weight: 600;
     color: white;
-    line-height: 1.75rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.5rem;
+    text-shadow: 0.1vw 0.1vw 0.2vw rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 30px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 768px) {
+    .button {
+      padding: 0.8vw 1.5vw;
+      font-size: 4.5vw;
+    }
+  }
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
   }
   .button-icon {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin: 5px;
+    width: 1.4rem;
+    height: 1.4rem;
     color: white;
   }
 </style>
