@@ -134,7 +134,12 @@
       font-size: 46px;
     }
     .headline-2 {
-      font-size: 76px;
+      font-size: 84px;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .headline-2 {
+      font-size: 75px;
     }
   }
   .columns {
@@ -183,8 +188,8 @@
   @media screen and (max-width: 480px) {
     .badge {
       position: relative;
-      margin-top: 31px;
-      margin-left: 70px;
+      margin-top: 5px;
+      margin-left: 46px;
       text-align: center;
     }
     .badge p {
@@ -192,15 +197,31 @@
       left: 50%;
       margin: 0;
       padding: 0;
-      font-size: 12px;
+      font-size: 18px;
       font-weight: 500;
       color: #dc2626;
       line-height: 1.23rem;
-      transform: translate(3px, -73px);
+      transform: translate(3px, -94px);
     }
     .badge span {
-      font-size: 20px;
+      font-size: 33px;
       font-weight: 700;
+    }
+    .badge img {
+      width: 160px;
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .badge {
+      margin-top: 34px;
+    }
+    .badge p {
+      font-size: 9px;
+      transform: translate(1px, -68px);
+    }
+    .badge span {
+      font-size: 26px;
     }
   }
   .pill-list {
@@ -274,12 +295,11 @@
   @media screen and (max-width: 480px) {
     .pill-list {
       margin-right: -66px;
-      margin-left: -16px;
-      padding: -7px;
+      margin-left: -12px;
       text-align: center;
     }
     .pill-1 {
-      font-size: 13px;
+      font-size: 16px;
       font-weight: 800;
       color: #ef4444;
       background-color: white;

@@ -55,8 +55,8 @@
   }
   @media screen and (max-width: 450px) {
     .phone-items {
-      font-size: 1.8rem;
-      font-weight: 500;
+      font-size: 23px;
+      font-weight: 400;
       line-height: 1.8rem;
     }
 
