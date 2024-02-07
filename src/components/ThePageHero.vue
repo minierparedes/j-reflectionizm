@@ -3,27 +3,30 @@
 </script>
 <template>
   <div id="page-hero-id" class="page-hero">
-    <div class="hero-image"><img src="../assets/images/page_hero.png" alt="hero background" /></div>
     <div class="container">
       <div class="headline">
-        <h4 class="headline-1">歴史と自然の都「所沢」の公園墓地</h4>
+        <h4>歴史と自然の都「所沢」の公園墓地</h4>
         <div class="headline-main">
-          <h3 class="headline-2">霊源寺墓苑</h3>
-          <h1 class="headline-3">陽向の里</h1>
+          <h3 class="headline-1">霊源寺墓苑</h3>
+          <h1 class="headline-2">陽向の里</h1>
         </div>
       </div>
       <div class="columns">
-        <div class="pill-list">
-          <h3 class="pill-1">所沢駅からバスで10分</h3>
-          <h3 class="pill-2">後継ぎ心配不要・全区画永代供養付き</h3>
-          <h3 class="pill-3">30万円～用途別のお墓を用意</h3>
+        <div class="right-column">
+          <div class="pill-list">
+            <h3 class="pill-1">所沢駅からバスで10分</h3>
+            <h3 class="pill-2">後継ぎ心配不要・全区画永代供養付き</h3>
+            <h3 class="pill-3">30万円～用途別のお墓を用意</h3>
+          </div>
         </div>
-        <div class="badge">
-          <img src="../assets/images/gold_badge.png" alt="gold badge" />
-          <p class="badge-text">
-            一般墓<br />
-            好評発売中
-          </p>
+        <div class="left-column">
+          <div class="badge">
+            <img src="../assets/images/gold_badge.png" alt="gold badge" />
+            <p class="badge-text">
+              <span>一般墓</span><br />
+              好評発売中
+            </p>
+          </div>
         </div>
       </div>
       <div class="button-content">
@@ -35,132 +38,349 @@
 </template>
 
 <style lang="scss" scoped>
+  .page-hero {
+    height: 800px;
+    background: url('../assets/images/page_hero.png') center/cover no-repeat;
+  }
+
   .container {
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     display: flex;
+    padding: 20px;
   }
 
-  .hero-image {
-    position: relative;
-  }
   .headline {
-    margin-top: -45rem;
-    color: black;
+    margin-bottom: 20px;
+    color: white;
     text-align: center;
   }
-  .headline-1 {
-    margin-bottom: 1rem;
-    font-size: 2.25rem /* 36px */;
-    line-height: 2.5rem /* 40px */;
-  }
 
-  .headline-2 {
-    font-size: 3.75rem /* 60px */;
-    line-height: 1;
-  }
-
-  .headline-3 {
-    font-size: 6rem /* 96px */;
-    line-height: 1;
+  .headline h4 {
+    font-size: 46px;
   }
 
   .headline-main {
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     display: flex;
+    margin-top: 10px;
   }
 
+  .headline-1 {
+    font-size: 84px;
+  }
+  .headline-2 {
+    font-size: 140px;
+  }
+  @media screen and (max-width: 1280px) {
+    .headline h4 {
+      font-size: 46px;
+    }
+
+    .headline-main {
+      flex-direction: row;
+      align-items: center;
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .headline-1 {
+      font-size: 80px;
+    }
+    .headline-2 {
+      font-size: 120px;
+    }
+  }
+  @media screen and (max-width: 980px) {
+    .headline h4 {
+      font-size: 38px;
+    }
+    .headline-1 {
+      font-size: 55px;
+    }
+    .headline-2 {
+      font-size: 90px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .headline h4 {
+      font-size: 35px;
+    }
+
+    .headline-main {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .headline-1 {
+      font-size: 84px;
+    }
+    .headline-2 {
+      font-size: 140px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .columns {
+      margin-top: 38px;
+    }
+    .headline h4 {
+      font-size: 24px;
+    }
+    .headline-1 {
+      font-size: 46px;
+    }
+    .headline-2 {
+      font-size: 84px;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .headline-2 {
+      font-size: 75px;
+    }
+  }
   .columns {
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-    gap: 1rem;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
   }
 
+  .left-column,
+  .right-column {
+    width: 48%;
+  }
+
+  .badge {
+    position: relative;
+    margin-top: -20px;
+    margin-left: 70px;
+    text-align: center;
+  }
+  .badge p {
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: 500;
+    color: #dc2626;
+    line-height: 1.75rem;
+    transform: translate(-40px, -135px);
+  }
+  @media screen and (max-width: 768px) {
+    .badge p {
+      transform: translate(-15px, -135px);
+    }
+  }
+  .badge span {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .badge img {
+    width: 220px;
+    height: auto;
+  }
+  @media screen and (max-width: 480px) {
+    .badge {
+      position: relative;
+      margin-top: 5px;
+      margin-left: 46px;
+      text-align: center;
+    }
+    .badge p {
+      top: 50%;
+      left: 50%;
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      font-weight: 500;
+      color: #dc2626;
+      line-height: 1.23rem;
+      transform: translate(3px, -94px);
+    }
+    .badge span {
+      font-size: 33px;
+      font-weight: 700;
+    }
+    .badge img {
+      width: 160px;
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .badge {
+      margin-top: 34px;
+    }
+    .badge p {
+      font-size: 9px;
+      transform: translate(1px, -68px);
+    }
+    .badge span {
+      font-size: 26px;
+    }
+  }
   .pill-list {
-    grid-template-columns: 1;
-    display: grid;
+    margin-right: -50px;
+    margin-left: -50px;
+    padding: 8px;
     text-align: center;
   }
 
   .pill-1 {
-    --tw-bg-opacity: 1;
-    --tw-text-opacity: 1;
+    font-size: 25px;
+    font-weight: 800;
+    color: #ef4444;
+    background-color: white;
+  }
 
-    color: rgb(239 68 68 / var(--tw-text-opacity));
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  .pill-2,
+  .pill-3 {
+    font-size: 18px;
+    color: white;
+    background-color: rgba(25, 93, 185, 0.7);
   }
 
   .pill-1,
   .pill-2,
   .pill-3 {
+    display: inline-block;
+    width: 100%;
     margin-bottom: 10px;
-    border-radius: 9999px;
+    padding: 1vw 2vw;
+    border-radius: 50px;
   }
-
-  .pill-2,
-  .pill-3 {
-    --tw-bg-opacity: 1;
-
-    background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  @media screen and (max-width: 1200px) {
+    .pill-list {
+      margin-right: -90px;
+      margin-left: -3px;
+      padding: 8px;
+      text-align: center;
+    }
   }
+  @media screen and (max-width: 768px) {
+    .pill-1 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ef4444;
+      background-color: white;
+    }
 
-  .badge {
-    position: relative;
-    text-align: center;
+    .pill-2,
+    .pill-3 {
+      font-size: 14px;
+      color: white;
+      background-color: rgba(25, 93, 185, 0.7);
+    }
+    .pill-list {
+      margin-right: -100px;
+      margin-left: -22px;
+      padding: 20px;
+      text-align: center;
+    }
+    .pill-1,
+    .pill-2,
+    .pill-3 {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: -1.5rem;
+      border-radius: 50px;
+    }
   }
+  @media screen and (max-width: 480px) {
+    .pill-list {
+      margin-right: -66px;
+      margin-left: -12px;
+      text-align: center;
+    }
+    .pill-1 {
+      font-size: 16px;
+      font-weight: 800;
+      color: #ef4444;
+      background-color: white;
+    }
 
-  .badge-text {
-    --tw-text-opacity: 1;
-
-    font-size: 1.25rem /* 20px */;
-    font-weight: 700;
-    color: rgb(220 38 38 / var(--tw-text-opacity));
-    line-height: 1.75rem /* 28px */;
+    .pill-2,
+    .pill-3 {
+      font-size: 14px;
+      color: white;
+      background-color: rgba(25, 93, 185, 0.7);
+    }
+    .pill-1,
+    .pill-2,
+    .pill-3 {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: -1.5rem;
+      border-radius: 50px;
+    }
   }
-
-  .badge p {
-    position: absolute;
-    top: 0;
-    left: 5%; // move position to left with neg %
-    margin: 0.5rem 0 0;
-    transform: translateX(-175%);
-    transform: translateY(45%);
-  }
-
-  .badge img {
-    width: 140px;
-    height: auto;
-  }
-
   .button-content {
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 35rem;
-    margin-top: 10rem;
-    padding: 1rem;
-    border-radius: 35px;
-
-    background-image: linear-gradient(to bottom, #c2410c, #f97316);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 5vh;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 55px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1) 0%,
+      #bd0d01 6%,
+      #bd0d01 8%,
+      #bd0d01 10%,
+      #ae4c24 12%,
+      #c85e34 14%,
+      #c85e34 16%,
+      #c2410c 20%,
+      #c2410c 20%,
+      #f97316 70%,
+      #f97316 80%,
+      rgba(225, 95, 9, 0.8) 90%,
+      rgba(225, 95, 9, 0.7) 90%,
+      rgba(225, 95, 9, 0.5) 90%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
   }
 
   .button {
-    font-size: 1.25rem /* 20px */;
+    padding: 0.6rem;
+    font-size: 40px;
+    font-weight: 600;
     color: white;
-    line-height: 1.75rem /* 28px */;
+    line-height: 1.5rem;
+    text-shadow: 0.1vw 0.1vw 0.2vw rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 30px;
+    background-color: transparent;
+    cursor: pointer;
   }
-
+  @media screen and (max-width: 768px) {
+    .button {
+      padding: 0.8vw 1.5vw;
+      font-size: 4.5vw;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .button-content {
+      margin-top: 18vh;
+    }
+  }
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
   .button-icon {
-    width: 1.25rem /* 20px */;
-    height: 1.25rem /* 20px */;
+    width: 1.4rem;
+    height: 1.4rem;
     color: white;
   }
 </style>

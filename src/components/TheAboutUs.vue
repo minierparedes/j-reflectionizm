@@ -1,3 +1,9 @@
+<script setup>
+  import * as image from '@/assets/images/useAssets'
+
+  const office_location = image.about_us_office_location
+</script>
+
 <template>
   <div class="about-us">
     <div class="container">
@@ -8,13 +14,11 @@
       <div class="location">
         <h2 class="location-heading">立地良好</h2>
         <div class="location-content">
-          <h3 class="location-title">所沢駅からバスで10分</h3>
-          <p>
-            霊源寺墓苑「陽向の里」は、ターミナル駅である所沢駅からバスでアクセスが可能。10分に1本はバスが走るため、交通の便が良く、市内随一の好立地公園墓地です。埼玉県所沢市上安松に位置する住宅地から近い霊園であり、都市部からも近いのが特徴です。
-          </p>
-          <div class="location-image">
-            <img src="../assets/images/about_us_office_location.png" alt="office location" />
-          </div>
+          <MediaBlock
+            title="所沢駅からバスで10分"
+            text="霊源寺墓苑「陽向の里」は、ターミナル駅である所沢駅からバスでアクセスが可能。10分に1本はバスが走るため、交通の便が良く、市内随一の好立地公園墓地です。埼玉県所沢市上安松に位置する住宅地から近い霊園であり、都市部からも近いのが特徴です。"
+            :img="office_location"
+          />
         </div>
       </div>
       <div class="transportation">
@@ -53,7 +57,7 @@
 
 <style lang="scss" scoped>
   .container {
-    height: 150vh;
+    // height: 150vh;
   }
   .heading {
     flex-direction: column;
@@ -64,42 +68,48 @@
   }
 
   .heading-title1 {
-    --tw-text-opacity: 1;
-
-    font-size: 2.25rem /* 36px */;
+    font-size: 64px;
     font-weight: 600;
-    color: rgb(68 151 50 / var(--tw-text-opacity));
-    line-height: 2.5rem /* 40px */;
+    color: #449732;
+    line-height: 1.5;
   }
 
   .heading-title2 {
-    --tw-text-opacity: 1;
-
-    font-size: 3.75rem /* 60px */;
+    font-size: 84px;
     font-weight: 600;
-    color: rgb(68 151 50 / var(--tw-text-opacity));
+    color: #449732;
     line-height: 1;
   }
   .location-heading {
     justify-content: center;
     align-items: center;
     display: flex;
-    margin: 20px;
     padding-top: 25px;
     padding-bottom: 25px;
-    font-size: 2.25rem /* 36px */;
+    font-size: 36px;
     color: white;
-    line-height: 2.5rem /* 40px */;
+    line-height: 40px;
     background: url('../assets/images/about_us_location_bg_pattern_image.png');
   }
-
-  .location-content {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    display: flex;
-    max-width: 1349px;
-    margin-inline: auto;
+  @media screen and (max-width: 1024px) {
+    .heading-title1 {
+      font-size: 60px;
+    }
+    .heading-title2 {
+      font-size: 80px;
+      line-height: 1;
+    }
   }
+  @media screen and (max-width: 390px) {
+    .heading-title1 {
+      font-size: 40px;
+    }
+    .heading-title2 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+  }
+
   .location-title {
     --tw-text-opacity: 1;
 
@@ -109,30 +119,6 @@
     font-weight: 600;
     color: rgb(251 146 60 / var(--tw-text-opacity));
     line-height: 1.75rem /* 28px */;
-  }
-
-  .location-content p {
-    flex: 1;
-    max-width: 100%;
-    margin-right: 25px;
-  }
-
-  .location-content img {
-    max-width: 100%;
-    margin-top: 20px;
-  }
-  @media (max-width: 764px) {
-    .location-content {
-      flex-direction: column;
-      align-items: center;
-    }
-    .location-title,
-    .location-content p,
-    .location-image {
-      width: 100%;
-      margin-right: 0;
-      text-align: center;
-    }
   }
 
   .transportation {
@@ -177,8 +163,15 @@
     justify-content: center;
     display: grid;
     gap: 20px;
-    width: 90%; // TODO: content not dead center
-    padding: 50px;
+    width: 80%; // TODO: content not dead center
+    padding: 59px;
+  }
+  @media screen and (max-width: 390px) {
+    .transportation-content {
+      gap: 71px;
+      width: 58%;
+      padding: 33px;
+    }
   }
 
   .card-container {

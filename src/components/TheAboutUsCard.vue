@@ -21,10 +21,8 @@
 
   .transpot-card-content1,
   .transpot-card-content3 {
-    --tw-text-opacity: 1;
-
     margin: 5px;
-    color: rgb(21 128 61 / var(--tw-text-opacity));
+    color: #15803d;
     line-height: 25px;
   }
 
@@ -42,5 +40,23 @@
     padding: 0 20px;
     border-radius: 30px;
     background-color: aliceblue;
+  }
+  @media (max-width: 390px) {
+    .transport-card {
+      width: 125px;
+      height: 108px;
+      padding: 1px;
+    }
+
+    .transpot-card-content1,
+    .transpot-card-content2,
+    .transpot-card-content3 {
+      font-size: 11px;
+    }
+
+    .transpot-card-content3 {
+      padding: 0px 0px;
+      border-radius: 30px;
+    }
   }
 </style>
